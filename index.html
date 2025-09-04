@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       
+    <meta charset="UTF-8" />
+       
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>ADI'S WEBSITE</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #1f1c18 0%, #3e3a33 100%);
+            color: #e5c07b;
+            perspective: 1200px;
+        }
+
+        header {
+            background: rgba(34, 28, 15, 0.85);
+            color: #e5c07b;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(229, 192, 123, 0.5);
+            font-family: 'Merriweather', serif;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 2.4rem;
+            animation: fadeSlideDown 1.2s ease forwards;
+            opacity: 0;
+            transform: translateY(-40px);
+        }
+
+        @keyframes fadeSlideDown {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #e5c07b;
+            font-weight: 600;
+            font-size: 1.2rem;
+            padding: 8px 18px;
+            border: 2px solid transparent;
+            border-radius: 30px;
+            transition: all 0.4s ease;
+            box-shadow: 0 0 10px rgba(229, 192, 123, 0.7);
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background: #e5c07b;
+            color: #2b251a;
+            border-color: #e5c07b;
+            box-shadow: 0 0 18px rgba(229, 192, 123, 1);
+            transform: scale(1.1);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 60px auto 120px;
+            background: rgba(44, 38, 24, 0.75);
+            padding: 40px 50px;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            color: #f7f1d1;
+            transform-style: preserve-3d;
+        }
+
+        section {
+            opacity: 0;
+            transform: translateX(-80px);
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            animation-duration: 1s;
+            animation-name: slideInLeft;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #b89640cc;
+            padding-bottom: 30px;
+        }
+
+        section:nth-of-type(1) {
+            animation-delay: 0.7s;
+        }
+
+        section:nth-of-type(2) {
+            animation-delay: 1.4s;
+            border: none;
+            padding-bottom: 0;
+        }
+
+        section:nth-of-type(3) {
+            animation-delay: 2.0s;
+        }
+
+        @keyframes slideInLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        h1,
+        h2 {
+            font-family: 'Merriweather', serif;
+            color: #f7f1d1;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: rgba(34, 28, 15, 0.85);
+            color: #e5c07b;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 1rem;
+            box-shadow: 0 -4px 18px rgba(229, 192, 123, 0.5);
+            opacity: 0;
+            animation: fadeIn 1.2s ease forwards;
+            animation-delay: 2.5s;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+        <header>
+                WELCOME TO MY WEBSITE
+                <nav>
+                        <a href="#home">Home</a>
+                        <a href="#aboutmyself">About Myself </a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+            </header>
+        <main>
+                <section id="home" style="text-align:center; padding: 60px 20px; max-width: 700px; margin: auto; color: #f7f1d1; font-family: 'Montserrat', sans-serif;">
+  <p style="font-size: 1.3rem; font-weight: 600; letter-spacing: 1.2px; margin-bottom: 20px;">
+    Welcome to my world of <span style="color: #e5c07b; font-weight: 700;">technology</span> and <span style="color: #e5c07b; font-weight: 700;">creativity</span>.
+  </p>
+  <p style="font-size: 1.1rem; font-style: italic; margin-bottom: 20px; line-height: 1.6;">
+    Here you’ll find my journey, projects, and ideas brought to life through <span style="color: #e5c07b;">coding</span>.
+  </p>
+  <p style="font-size: 1.1rem; margin-bottom: 20px; font-weight: 500;">
+    Passionate about solving problems and building innovative solutions through programming.
+  </p>
+  <p style="font-size: 1.1rem; margin-bottom: 20px; font-weight: 500;">
+    Join me as I explore the endless possibilities of the <span style="color: #e5c07b; font-weight: 700;">digital world</span>.
+  </p>
+  <p style="font-size: 1rem; font-style: italic; color: #d3c177;">
+    Dedicated to learning, growing, and sharing knowledge one line of code at a time.
+  </p>
+  <p style="font-size: 1.1rem; margin-top: 40px; font-weight: 600; letter-spacing: 1px;">
+    Let’s build the future together with <span style="color: #e5c07b; font-weight: 700;">creativity</span> and <span style="color: #e5c07b; font-weight: 700;">passion</span>.
+  </p>
+  <p style="font-size: 1.1rem; margin-bottom: 20px;">
+  Embracing challenges and turning them into opportunities for growth and innovation.
+</p>
+<p style="font-size: 1.1rem; margin-bottom: 20px; font-style: italic; color: #d3c177;">
+  Passion fuels progress — every bug fixed and feature built is a step closer to mastery.
+</p>
+<p style="font-size: 1.1rem; margin-bottom: 20px;">
+  Committed to continuous learning and staying ahead in the ever-evolving tech landscape.
+</p>
+<p style="font-size: 1.1rem; margin-bottom: 20px; font-weight: 600; color: #e5c07b;">
+  Innovation, creativity, and determination are the cornerstones of my coding journey.
+</p>
+<p style="font-size: 1.1rem; margin-bottom: 20px;">
+  Let’s explore the limitless possibilities of technology together.
+</p>
+
+</section>
+
+                <section id="aboutmyself" style="max-width: 900px; margin: 60px auto; padding: 30px 40px; background: rgba(44, 38, 24, 0.75); border-radius: 12px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7); backdrop-filter: blur(10px); color: #f7f1d1; font-family: 'Montserrat', sans-serif; line-height: 1.7;">
+  <h2 style="font-family: 'Merriweather', serif; font-size: 2.5rem; color: #e5c07b; margin-bottom: 30px; text-align: center;">
+    About Myself
+  </h2>
+
+  <p style="font-size: 1.15rem; margin-bottom: 20px;">
+    I am currently a <strong>first-year student</strong> pursuing Computer Science and Engineering at <strong>NMIT College</strong>. From the moment I began my journey in this field, I have been deeply passionate about coding and software development. For me, programming is not just about writing code; it is a way to solve real-world problems creatively and efficiently. Every line of code I write challenges me to think critically and learn continuously, fueling my enthusiasm to grow as a developer.
+  </p>
+
+  <p style="font-size: 1.15rem; margin-bottom: 20px;">
+    Being at the start of my academic career, I am excited to explore the vast world of technology and computer science. I actively seek out opportunities to deepen my understanding of programming languages, algorithms, and data structures, knowing that these foundational skills will pave the way for innovation and success in my future career. I am diligent in my studies and equally committed to practical learning through projects and collaboration, which help me apply theoretical concepts to real-life scenarios.
+  </p>
+
+  <p style="font-size: 1.15rem; margin-bottom: 20px;">
+    My passion for coding motivates me to stay updated with the latest trends and technologies in software development. I enjoy experimenting with different programming languages and tools, which broadens my skill set and enhances my problem-solving abilities. Learning to code has taught me patience, attention to detail, and perseverance—qualities that I believe are essential to becoming a successful engineer.
+  </p>
+
+  <p style="font-size: 1.15rem; margin-bottom: 20px;">
+    At NMIT College, I am surrounded by like-minded peers and mentors who inspire me to push my limits and pursue excellence. I am excited about the challenges and opportunities that lie ahead and am determined to make the most of my time here. Coding is not merely a hobby for me; it is a lifelong passion and the foundation of the career I aspire to build.
+  </p>
+
+  <p style="font-size: 1.15rem; margin-bottom: 0;">
+    In summary, as a first-year CSE student at NMIT College, I am enthusiastic, motivated, and dedicated to honing my coding skills and contributing meaningfully to the tech community. This passion drives me every day to learn, create, and grow into the engineer I dream of becoming.
+  </p>
+</section>
+
+          
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<section id="contact" style="max-width: 700px; margin: 60px auto; padding: 40px 30px; background: rgba(44, 38, 24, 0.75); border-radius: 12px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7); backdrop-filter: blur(10px); color: #f7f1d1; font-family: 'Montserrat', sans-serif; line-height: 1.7;">
+  <h2 style="font-family: 'Merriweather', serif; font-size: 2.5rem; color: #e5c07b; margin-bottom: 30px; text-align: center;">
+    Contact Me
+  </h2>
+  <p style="font-size: 1.15rem; margin-bottom: 15px;">
+    <strong>Email:</strong> <a href="mailto:adithyam357@gmail.com" style="color: #e5c07b; text-decoration: none;">adithyam357@gmail.com</a>
+  </p>
+  <p style="font-size: 1.15rem; margin-bottom: 25px;">
+    <strong>Phone:</strong> <a href="tel:+918437161125" style="color: #e5c07b; text-decoration: none;">+91 84371 61125</a>
+  </p>
+
+  <div style="text-align: center; font-size: 2rem;">
+    <a href="https://www.linkedin.com/in/adithya-551208372" target="_blank" style="margin: 0 15px; color: #e5c07b;" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/Adi140108" target="_blank" style="margin: 0 15px; color: #e5c07b;" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+   
+    <a href="https://instagram.com/adithya_gowda14012008" target="_blank" style="margin: 0 15px; color: #e5c07b;" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+
+  <p style="margin-top: 35px; font-size: 1rem; font-style: italic; color: #d3c177; text-align: center;">
+    Feel free to reach out for collaborations, questions, or just to say hello!
+  </p>
+</section>
+
+
+
+
+       
+    <script>
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetID = this.getAttribute('href');
+                const target = document.querySelector(targetID);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+     </main>
+        <footer>
+                &copy; 2025 ADITHYA GOWDA
+            </footer>
+</body>
+
+</html>
